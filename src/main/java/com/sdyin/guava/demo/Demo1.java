@@ -10,7 +10,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Demo1 {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext("com.sdyin.guaua");
+        //注解方式 扫描指定包
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext("com.sdyin.guava");
         ac.close();
     }
 }
