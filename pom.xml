@@ -41,23 +41,6 @@
 			<artifactId>curator-recipes</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-dependencies</artifactId>
-			<version>${parent.version}</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-pubsub</artifactId>
-			<version>${spring-cloud-gcp.version}</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-
-
-
 	</dependencies>
 
 	<build>
