@@ -27,6 +27,7 @@ public class ZeroEvenOdd {
     public void zero(IntConsumer printNumber) throws InterruptedException {
         for(int i = 1;i <= n;i++) {
             s.acquire();
+            //执行函数式接口,入参提供
             printNumber.accept(0);
             if((i&1) == 0) {
                 s1.release();
