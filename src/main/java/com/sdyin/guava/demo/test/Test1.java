@@ -3,13 +3,16 @@ package com.sdyin.guava.demo.test;
 import java.util.function.IntConsumer;
 
 /**
- * @Description TODO
+ * @Description
  * @Author liuye
  * @Date 2019/10/30 11:27
  **/
 public class Test1 {
 
+    private static final ThreadLocal<Integer> catalog = new ThreadLocal<>();
+
     public void zero(IntConsumer printNumber) throws InterruptedException {
+        //函数式接口,及参数
         printNumber.accept(0);
     }
 
